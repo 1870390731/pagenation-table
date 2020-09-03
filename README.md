@@ -4,7 +4,7 @@
 安装  
 
 ```javascript
-$ npm install postcss-px-to-viewport --save-dev
+$ npm install pagenation-table --save-dev
 ```
 引入  
 
