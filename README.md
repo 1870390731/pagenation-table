@@ -79,9 +79,11 @@ tableConf:
 |  字段名   | 说明  |  类型  |  默认值  |
 |  ----  | ----  |  ----  | ----  |
 | url  | 请求数据接口完整路径, 不传则不会调用接口 |  字符串  |  ''  |
-| thead  | el-table-column Attributes都可以作为该对象的字段 | 数组 |  []  |
+| thead  | el-table-column Attributes都可以作为该对象的字段并传入组件中的el-table-column中 | 数组 |  []  |
+| listKey  | 后台接口返回的表格数据字段名 | string |  'list'  |
+| totalKey  | 后台接口返回的表格数据总数字段名 | string |  'totalCount'  |
 | deleteEmptyKey  | 如果传true就会删掉请求参数中值为空字符、undefined、null的字段,传false就不删 | 布尔| true |
-| ...  | el-table Attributes都可以作为tableConf的字段 |
+| ...  | el-table Attributes都可以作为tableConf的字段并传入组件中的el-table中 |
 
 v-model: 勾选中的数据列表, 类型为数组  
 
