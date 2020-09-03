@@ -1,5 +1,6 @@
 # pagenation-table
-基于el-table的自带分页、自动排序、带参查询的表格组件
+基于el-table的自带分页、自动排序、带参查询的表格组件  
+
 安装  
 
 ```javascript
@@ -79,8 +80,8 @@ tableConf:
 |  ----  | ----  |  ----  | ----  |
 | url  | 请求数据接口完整路径, 不传则不会调用接口 |  字符串  |  ''  |
 | thead  | el-table-column Attributes都可以作为该对象的字段 | 数组 |  []  |
-| ...  | Table Attributes都可以作为tableConf的字段 |
-| deleteEmptyKey  | 如果传true就会删掉请求参数中值为空字符、undefined、null的字段,传false就不删 | 布尔| true | 
+| deleteEmptyKey  | 如果传true就会删掉请求参数中值为空字符、undefined、null的字段,传false就不删 | 布尔| true |
+| ...  | el-table Attributes都可以作为tableConf的字段 |
 
 v-model: 勾选中的数据列表, 类型为数组  
 
@@ -100,5 +101,5 @@ Methods
 |  方法名   | 说明  |  参数   |
 |  ----  | ----  |  ----  |
 | getElTable  | 获取当前el-table实例 |  无  |
-| getList  | 调用后台接口获取表格数据, 筛选数据时会用到这个方法, 返回一个promise, resolve时可以拿到当前表格数据, reject时拿到空数组 |  search = false, 传true会将当前页数重置成第一页
+| getList  | 调用后台接口获取表格数据, 筛选数据时会用到这个方法, 返回一个promise, 可以拿到当前表格数据或空数组 |  search = false, 传true会将当前页数重置成第一页
 
