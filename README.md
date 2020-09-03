@@ -102,6 +102,6 @@ Methods
 
 |  方法名   | 说明  |  参数   |
 |  ----  | ----  |  ----  |
-| getElTable  | 获取当前el-table实例 |  无  |
+| getElTable  | 获取当前el-table实例, 可以通过返回值来调用el-table的所有方法 |  无  |
 | getList  | 调用后台接口获取表格数据, 筛选数据时会用到这个方法, 返回一个promise, 可以拿到当前表格数据或空数组 |  search = false, 传true会将当前页数重置成第一页
 
