@@ -1,5 +1,5 @@
 # pagenation-table
-基于el-table的自带分页、自动排序、带参查询的表格组件  
+基于el-table的自带分页、自动排序、带参查询的表格组件 (随时恭候各位大佬的issue)  
 
 安装  
 
